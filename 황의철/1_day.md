@@ -4,7 +4,7 @@
 
 ## Word2Vec
 
-1. 희소 & 밀집 표현 
+### 1. 희소 & 밀집 표현 
 
     - 대표적인 기법 → 원-핫 인코딩 
     
@@ -99,7 +99,7 @@ print(one_hot_encoded)
 ----
 
 
-2. 밀집 표현이란? 
+### 2. 밀집 표현이란? 
 - 기존 원-핫 벡터로 이루어진 고차원의 데이터셋이 아닌 → 저차원의 밀집된 벡터로 표현하는 방식 
 - 차원을 낮추는 작업이기에, 원하는대로 차원을 바꿀 수 있고 또한 0과 1의 값이 아닌 실수의 값으로 변형하여 단어간의 유사성을 계산하기 용이하게끔 표현을 학습할 수 있게 한다.
 
@@ -177,15 +177,17 @@ print(one_hot_encoded)
 
 수식 :
 
-$$
+
+```math
 \text{Cosine Similarity} = \frac{{\mathbf{A} \cdot \mathbf{B}}}{{\|\mathbf{A}\| \|\mathbf{B}\|}}
-$$
+```
 
 수식 설명 :
 
-\(A,B\)는 각 벡터의 내적이고 
-\(\|\mathbf{A}\|와 \|\mathbf{B}\|\)는 각각 벡터 A와 B의 유클리드 노름(Euclidean Norm) 
-
+```math
+A,B는 각 벡터의 내적이고 
+\|\mathbf{A}\|와 \|\mathbf{B}\|는 각각 벡터 A와 B의 유클리드 노름(Euclidean Norm) 
+```
 ### 그림으로 표현하면..
 ![Alt text](./image/코싸인.png)
 
@@ -203,7 +205,9 @@ $$
 
 - 두 벡터 간의 **직선 거리**를 측정하는 방식으로, 두 점 사이의 실제 거리를 계산, 크기와 방향을 모두 고려해서 유사성을 평가 
 
-    \(\text{Euclidean Distance} = \sqrt{\sum_{i=1}^{n} (A_i - B_i)^2}\)
+```math
+\text{Euclidean Distance} = \sqrt{\sum_{i=1}^{n} (A_i - B_i)^2}
+```
 
 
 #### 특징 
@@ -218,13 +222,17 @@ $$
 ### 실제 계산법 
 
 
-\(\mathbf{A} = [1, 2, 3]\)
-\(\mathbf{B} = [4, 5, 6]\)
+```math
+\mathbf{A} = [1, 2, 3]\
+\mathbf{B} = [4, 5, 6]\
+```
 
 두 개의 벡터가 있다고 가정할 때, 
 
 
-\(\text{Euclidean Distance} = \sqrt{(1-4)^2 + (2-5)^2 + (3-6)^2} = \sqrt{(-3)^2 + (-3)^2 + (-3)^2} = \sqrt{9 + 9 + 9} = \sqrt{27} \approx 5.1962\)
+```math
+\text{Euclidean Distance} = \sqrt{(1-4)^2 + (2-5)^2 + (3-6)^2} = \sqrt{(-3)^2 + (-3)^2 + (-3)^2} = \sqrt{9 + 9 + 9} = \sqrt{27} \approx 5.1962
+```
 
 - 자세한 설명은 생략한다. 
 
@@ -236,22 +244,24 @@ $$
 1. 노름과 내적은 뭘까?
 
 - 내적 : 벡터끼리 곱셈 
+```math
+\mathbf{A} = [1, 2, 3]
 
-\(\mathbf{A} = [1, 2, 3]\)
-
-
-\(\mathbf{B} = [4, 5, 6]\)
-
+\mathbf{B} = [4, 5, 6]
+```
 
 단계 1: 내적 계산
 
-
-\(\mathbf{A} \cdot \mathbf{B} = (1 \times 4) + (2 \times 5) + (3 \times 6) = 4 + 10 + 18 = 32\)
+```math
+\mathbf{A} \cdot \mathbf{B} = (1 \times 4) + (2 \times 5) + (3 \times 6) = 4 + 10 + 18 = 32\
+```
 
 - 노름 : 정의 상으로는 길이를 측정하는 방법이라고는 하지만 그냥 루트 씌워놓고 제곱을 통해 계산후 루트를 벗겨줌
 
 
-\(|\mathbf{A}\|2 = \sqrt{A_1^2 + A_2^2 + \ldots + A_n^2} = \sqrt{\sum{i=1}^{n} A_i^2}\)
+```math
+|\mathbf{A}\|2 = \sqrt{A_1^2 + A_2^2 + \ldots + A_n^2} = \sqrt{\sum{i=1}^{n} A_i^2}
+```
 
 
 
