@@ -6,7 +6,7 @@
 
 ## 인공지능의 포함관계 
 
-![Alt text](image.png)
+![Alt text](./image/image1-1.png)
 
 간단하게 생각하자면 
 > 인공지능 > 머신러닝 > 딥러닝 
@@ -31,7 +31,7 @@
 
 1. 지도학습(Supervised Learning)
 
-![Alt text](image-2.png)
+![Alt text](./image/image-2.png)
 
 - 정답이 주어진 환경을 통해 학습시키며 컴퓨터에게 특징을 캐치하게끔 도와주는 방법 
 
@@ -78,11 +78,11 @@ $
 
 **그래프로 표현**
 
-![Alt text](image-4.png)
+![Alt text](./image/image-4.png)
 
 그렇게 구해진 값을 통해 가장 합리적인 추세선(구한 값)을 구하는 방법이 바로 오차항을 구하는 것 
 
-![Alt text](image-5.png)
+![Alt text](./image/image-5.png)
 
 **최소제곱법**
 가장 오차가 적은 회귀직선을 구하는 식을 최소제곱법이라고 합니다.
@@ -100,7 +100,7 @@ a와 b를 추정하는 방법이며 최소제곱법에 의해 구할 수 있는�
 
 - 예) 카드회사에서 회원들의 가입 정보를 통해 1년 후 신용 등급을 맞추는 것, 고객들의 속성을 활용해서 이탈할지 안할지를 예측 하는 방법 등 
 
-![Alt text](image-6.png)
+![Alt text](./image/image-6.png)
 
 이런 특징들의 패턴을 학습시키며 컴퓨터가 분류할 수 있도록 하는 것이 가장 큰 특징
 
