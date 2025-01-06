@@ -6,7 +6,7 @@
 
 
 #### 통계에서 알아야할 기본 용어 
-![alt text](image.png)
+![alt text](./image/image1212.png)
 
 - 간단하게 요약하자면
 
@@ -32,10 +32,10 @@
 
 ## 그림으로 표현하는 층화와 군집의 차이 
 
-![alt text](image-1.png)
+![alt text](./image/image-11.png)
 - 층화 추출 
 
-![](image-2.png)
+![](./image/image-22.png)
 - 군집 추출 
 
 -----
