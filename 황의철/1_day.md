@@ -178,16 +178,16 @@ print(one_hot_encoded)
 수식 :
 
 
-```math
-\text{Cosine Similarity} = \frac{{\mathbf{A} \cdot \mathbf{B}}}{{\|\mathbf{A}\| \|\mathbf{B}\|}}
-```
+
+$$\text{Cosine Similarity} = \frac{{\mathbf{A} \cdot \mathbf{B}}}{{\|\mathbf{A}\| \|\mathbf{B}\|}}$$
 
 수식 설명 :
 
-```math
+
 A,B는 각 벡터의 내적이고 
-\|\mathbf{A}\|와 \|\mathbf{B}\|는 각각 벡터 A와 B의 유클리드 노름(Euclidean Norm) 
-```
+$$\|\mathbf{A}\|와 \|\mathbf{B}\|$$
+는 각각 벡터 A와 B의 유클리드 노름(Euclidean Norm) 
+
 ### 그림으로 표현하면..
 ![Alt text](./image/코싸인.png)
 
@@ -205,9 +205,8 @@ A,B는 각 벡터의 내적이고
 
 - 두 벡터 간의 **직선 거리**를 측정하는 방식으로, 두 점 사이의 실제 거리를 계산, 크기와 방향을 모두 고려해서 유사성을 평가 
 
-```math
-\text{Euclidean Distance} = \sqrt{\sum_{i=1}^{n} (A_i - B_i)^2}
-```
+
+$$\text{Euclidean Distance} = \sqrt{\sum_{i=1}^{n} (A_i - B_i)^2}$$
 
 
 #### 특징 
@@ -222,20 +221,18 @@ A,B는 각 벡터의 내적이고
 ### 실제 계산법 
 
 
-```math
-\mathbf{A} = [1, 2, 3]
-```
 
-```math
-\mathbf{B} = [4, 5, 6]
-```
+$$\mathbf{A} = [1, 2, 3]$$
+
+
+
+$$\mathbf{B} = [4, 5, 6]$$
 
 두 개의 벡터가 있다고 가정할 때, 
 
 
-```math
-\text{Euclidean Distance} = \sqrt{(1-4)^2 + (2-5)^2 + (3-6)^2} = \sqrt{(-3)^2 + (-3)^2 + (-3)^2} = \sqrt{9 + 9 + 9} = \sqrt{27} \approx 5.1962
-```
+
+$$\text{Euclidean Distance} = \sqrt{(1-4)^2 + (2-5)^2 + (3-6)^2} = \sqrt{(-3)^2 + (-3)^2 + (-3)^2} = \sqrt{9 + 9 + 9} = \sqrt{27} \approx 5.1962$$
 
 - 자세한 설명은 생략한다. 
 
@@ -247,26 +244,24 @@ A,B는 각 벡터의 내적이고
 1. 노름과 내적은 뭘까?
 
 - 내적 : 벡터끼리 곱셈 
-```math
-\mathbf{A} = [1, 2, 3]
-```
 
-```math
-\mathbf{B} = [4, 5, 6]
-```
+$$\mathbf{A} = [1, 2, 3]$$
+
+
+
+$$\mathbf{B} = [4, 5, 6]$$
+
    
 단계 1: 내적 계산
 
-```math
-\mathbf{A} \cdot \mathbf{B} = (1 \times 4) + (2 \times 5) + (3 \times 6) = 4 + 10 + 18 = 32\
-```
+
+$$\mathbf{A} \cdot \mathbf{B} = (1 \times 4) + (2 \times 5) + (3 \times 6) = 4 + 10 + 18 = 32\$$
 
 - 노름 : 정의 상으로는 길이를 측정하는 방법이라고는 하지만 그냥 루트 씌워놓고 제곱을 통해 계산후 루트를 벗겨줌
 
 
-```math
-|\mathbf{A}\|2 = \sqrt{A_1^2 + A_2^2 + \ldots + A_n^2} = \sqrt{\sum{i=1}^{n} A_i^2}
-```
+
+$$|\mathbf{A}\|2 = \sqrt{A_1^2 + A_2^2 + \ldots + A_n^2} = \sqrt{\sum{i=1}^{n} A_i^2}$$
 
 
 
