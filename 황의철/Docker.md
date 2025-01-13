@@ -1,6 +1,6 @@
 ## Docker의 기원 
 
-![Alt text](docker.png)
+![Alt text](./image/docker.png)
 
 - 왜 필요하냐? 
     - 그냥 기업에서 많이 씀
@@ -15,14 +15,14 @@
 
 - 원래 가상화 기반 머신은 있었다 
 
-![Alt text](mooli.png)
+![Alt text](./image/mooli.png)
 
 - 물리 서버 위에 Guest OS라는 가상 OS를 껴놓고 운영 
 
 - OS위에 OS를 껴놓으니 헤비함 
 
 
-![Alt text](dockers.png)
+![Alt text](./image/dockers.png)
 
 가볍고 때에 따라 버려도 나의 시스템엔 아무런 영향도 없고 자원을 분리해서 사용하기 가장 좋음 
 
@@ -30,7 +30,7 @@
 
 ## Layer 
 
-![Alt text](dockerlayer.png)
+![Alt text](./image/dockerlayer.png)
 
 레이어란 무엇인가? 
 
